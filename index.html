@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MVPVU | Where Every Moment Matters</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Noise Overlay -->
+    <div class="noise-overlay"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <svg class="logo-img" viewBox="0 0 184 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <text x="0" y="32" font-family="Arial, sans-serif" font-size="38" font-weight="400" fill="#1a1a2e">mv</text>
+                    <!-- p stem -->
+                    <rect x="54" y="2" width="6" height="42" fill="#1a1a2e"/>
+                    <!-- p bowl (circular outline) -->
+                    <circle cx="75" cy="17" r="14" stroke="#1a1a2e" stroke-width="6" fill="none"/>
+                    <!-- play triangle inside bowl -->
+                    <polygon points="69,9 69,25 83,17" fill="#7D4996"/>
+                    <!-- vu text -->
+                    <text x="94" y="32" font-family="Arial, sans-serif" font-size="38" font-weight="400" fill="#7D4996">vu</text>
+                </svg>
+            </a>
+            <div class="nav-links" id="nav-links">
+                <a href="#features">Features</a>
+                <a href="#value">Benefits</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="nav-buttons">
+                <a href="https://app.mvpvu.com/login" class="btn btn-ghost">Log In</a>
+                <a href="https://app.mvpvu.com/login" class="btn btn-primary btn-glow">
+                    Get Started
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+            <div class="grid-overlay"></div>
+        </div>
+
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    <span>Professional Youth Sports Recording</span>
+                    <span class="badge-arrow">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </span>
+                </div>
+
+                <h1 class="hero-title">
+                    <span class="title-line">Where Every</span>
+                    <span class="title-line gradient-text">Moment Matters</span>
+                </h1>
+
+                <p class="hero-subtitle">
+                    Never miss a game-winning goal, a first basket, or that perfect catch.
+                    Professional-quality recording so you can focus on cheering, not filming.
+                </p>
+
+                <div class="hero-cta">
+                    <a href="https://app.mvpvu.com/login" class="btn btn-primary btn-large btn-glow">
+                        Start Free Trial
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <a href="#how-it-works" class="btn btn-glass btn-large">
+                        <div class="btn-icon-circle">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="5 3 19 12 5 21 5 3"/>
+                            </svg>
+                        </div>
+                        Watch Demo
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/>
+                            </svg>
+                        </div>
+                        <div class="stat-info">
+                            <span class="stat-number" data-target="50000">0</span>
+                            <span class="stat-label">Games Recorded</span>
+                        </div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                            </svg>
+                        </div>
+                        <div class="stat-info">
+                            <span class="stat-number" data-target="10000">0</span>
+                            <span class="stat-label">Happy Families</span>
+                        </div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            </svg>
+                        </div>
+                        <div class="stat-info">
+                            <span class="stat-number" data-target="500">0</span>
+                            <span class="stat-label">Partner Teams</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="phone-container">
+                    <div class="phone-mockup">
+                        <div class="phone-notch"></div>
+                        <div class="phone-screen">
+                            <div class="screen-header">
+                                <span class="live-indicator">
+                                    <span class="live-dot"></span>
+                                    LIVE
+                                </span>
+                                <span class="viewer-count">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                                        <circle cx="12" cy="12" r="3"/>
+                                    </svg>
+                                    247
+                                </span>
+                            </div>
+                            <div class="screen-content">
+                                <div class="play-button-large">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <polygon points="5 3 19 12 5 21 5 3"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="screen-footer">
+                                <div class="game-info">
+                                    <span class="team-name">Eagles vs Hawks</span>
+                                    <span class="game-time">Q3 · 4:32</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Floating Elements -->
+                    <div class="floating-element float-1">
+                        <div class="float-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                            </svg>
+                        </div>
+                        <span>Highlight Saved!</span>
+                    </div>
+
+                    <div class="floating-element float-2">
+                        <div class="float-icon green">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                        </div>
+                        <span>4K Recording</span>
+                    </div>
+
+                    <div class="floating-element float-3">
+                        <div class="float-icon orange">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/>
+                                <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
+                            </svg>
+                        </div>
+                        <span>Shared with Family</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <!-- Trusted By Section -->
+    <section class="trusted-by">
+        <div class="container">
+            <p class="trusted-label">Trusted by leading youth sports organizations</p>
+            <div class="logo-carousel">
+                <div class="logo-track">
+                    <div class="partner-logo">Utah Youth Soccer</div>
+                    <div class="partner-logo">Mountain West Basketball</div>
+                    <div class="partner-logo">Valley Athletics</div>
+                    <div class="partner-logo">Premier Sports League</div>
+                    <div class="partner-logo">Junior League Baseball</div>
+                    <div class="partner-logo">Academy Football</div>
+                    <div class="partner-logo">Utah Youth Soccer</div>
+                    <div class="partner-logo">Mountain West Basketball</div>
+                    <div class="partner-logo">Valley Athletics</div>
+                    <div class="partner-logo">Premier Sports League</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section - Bento Grid -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                    </svg>
+                    Features
+                </span>
+                <h2 class="section-title">
+                    Everything You Need to<br>
+                    <span class="gradient-text">Preserve the Memories</span>
+                </h2>
+                <p class="section-subtitle">
+                    Professional-grade recording meets family-friendly sharing.
+                    We handle the technology so you can focus on what matters.
+                </p>
+            </div>
+
+            <div class="bento-grid">
+                <!-- Main Feature - Capture -->
+                <div class="bento-card bento-large">
+                    <div class="bento-bg">
+                        <div class="bento-gradient"></div>
+                    </div>
+                    <div class="bento-content">
+                        <div class="bento-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M23 7l-7 5 7 5V7z"/>
+                                <rect x="1" y="5" width="15" height="14" rx="2" ry="2"/>
+                            </svg>
+                        </div>
+                        <h3>Capture Every Moment</h3>
+                        <p>Professional-quality 4K recording with multi-angle coverage. Our AI-powered cameras automatically track the action so you never miss a play.</p>
+                        <ul class="bento-features">
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                                Multi-angle coverage
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                                4K Ultra HD quality
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                                AI-powered tracking
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bento-visual">
+                        <div class="camera-icon">
+                            <div class="camera-lens"></div>
+                            <div class="camera-body"></div>
+                            <div class="recording-light"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Share Feature -->
+                <div class="bento-card bento-medium">
+                    <div class="bento-content">
+                        <div class="bento-icon purple">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/>
+                                <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/>
+                                <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
+                            </svg>
+                        </div>
+                        <h3>Share Instantly</h3>
+                        <p>One-click sharing to family and friends. Create personalized highlight reels automatically.</p>
+                        <div class="share-avatars">
+                            <div class="avatar">M</div>
+                            <div class="avatar">D</div>
+                            <div class="avatar">G</div>
+                            <div class="avatar more">+5</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Live Stream Feature -->
+                <div class="bento-card bento-medium">
+                    <div class="bento-content">
+                        <div class="bento-icon red">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                                <circle cx="12" cy="12" r="3"/>
+                            </svg>
+                        </div>
+                        <h3>Live Stream</h3>
+                        <p>Watch from anywhere in the world. Grandparents never miss a game again.</p>
+                        <div class="live-preview">
+                            <span class="live-badge-small">
+                                <span class="pulse"></span>
+                                LIVE NOW
+                            </span>
+                            <span class="viewers">1.2K watching</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Preserve Feature -->
+                <div class="bento-card bento-wide">
+                    <div class="bento-content">
+                        <div class="bento-icon green">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/>
+                                <polyline points="17 21 17 13 7 13 7 21"/>
+                                <polyline points="7 3 7 8 15 8"/>
+                            </svg>
+                        </div>
+                        <div class="bento-text">
+                            <h3>Preserve Forever</h3>
+                            <p>Unlimited cloud storage keeps every game safe. Organized by season, searchable by player.</p>
+                        </div>
+                    </div>
+                    <div class="storage-visual">
+                        <div class="storage-bar">
+                            <div class="storage-fill"></div>
+                        </div>
+                        <span class="storage-label">Unlimited Storage</span>
+                    </div>
+                </div>
+
+                <!-- Stats Feature -->
+                <div class="bento-card bento-small">
+                    <div class="bento-content centered">
+                        <div class="stat-circle">
+                            <svg viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="45" fill="none" stroke="rgba(139,92,246,0.2)" stroke-width="8"/>
+                                <circle cx="50" cy="50" r="45" fill="none" stroke="url(#statGrad)" stroke-width="8"
+                                    stroke-dasharray="283" stroke-dashoffset="70" stroke-linecap="round" transform="rotate(-90 50 50)"/>
+                                <defs>
+                                    <linearGradient id="statGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                                        <stop offset="0%" stop-color="#7D4996"/>
+                                        <stop offset="100%" stop-color="#F8931F"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <span class="stat-value">99%</span>
+                        </div>
+                        <p class="stat-desc">Uptime Guaranteed</p>
+                    </div>
+                </div>
+
+                <!-- Highlights Feature -->
+                <div class="bento-card bento-small">
+                    <div class="bento-content centered">
+                        <div class="highlight-stack">
+                            <div class="highlight-card h1"></div>
+                            <div class="highlight-card h2"></div>
+                            <div class="highlight-card h3"></div>
+                        </div>
+                        <p class="stat-desc">Auto Highlights</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Propositions -->
+    <section class="value" id="value">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                        <circle cx="9" cy="7" r="4"/>
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                    </svg>
+                    Who It's For
+                </span>
+                <h2 class="section-title">
+                    Built for <span class="gradient-text">Everyone</span><br>
+                    in Youth Sports
+                </h2>
+            </div>
+
+            <div class="value-cards">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                        </svg>
+                    </div>
+                    <h3>Families</h3>
+                    <p>Bridge the distance and bring the game home. Watch live from anywhere, share highlights instantly, and build a lasting archive of memories.</p>
+                    <ul class="value-list">
+                        <li>Watch games live from anywhere</li>
+                        <li>Share with extended family instantly</li>
+                        <li>Be present, not behind a phone</li>
+                    </ul>
+                </div>
+
+                <div class="value-card featured">
+                    <div class="featured-badge">Most Popular</div>
+                    <div class="value-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                        </svg>
+                    </div>
+                    <h3>Players</h3>
+                    <p>Turn game footage into a powerful learning tool. Review plays, track improvement, and build highlight reels for recruiting.</p>
+                    <ul class="value-list">
+                        <li>Review and learn from every game</li>
+                        <li>Track skill development over time</li>
+                        <li>Create recruiting highlight reels</li>
+                    </ul>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                            <line x1="8" y1="21" x2="16" y2="21"/>
+                            <line x1="12" y1="17" x2="12" y2="21"/>
+                        </svg>
+                    </div>
+                    <h3>Coaches</h3>
+                    <p>Elevate your coaching with professional video analysis. Review tactics, assess performances, and make data-driven decisions.</p>
+                    <ul class="value-list">
+                        <li>Analyze game tactics</li>
+                        <li>Track player development</li>
+                        <li>Create teaching clips</li>
+                    </ul>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
+                    <h3>Directors</h3>
+                    <p>Ensure safety and excellence across your organization with video documentation and real-time oversight of all activities.</p>
+                    <ul class="value-list">
+                        <li>Document for safety & compliance</li>
+                        <li>Train staff with real examples</li>
+                        <li>Real-time activity access</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <polyline points="12 6 12 12 16 14"/>
+                    </svg>
+                    How It Works
+                </span>
+                <h2 class="section-title">
+                    Get Started in<br>
+                    <span class="gradient-text">3 Simple Steps</span>
+                </h2>
+            </div>
+
+            <div class="steps-container">
+                <div class="steps-line">
+                    <div class="line-progress"></div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">
+                        <span>01</span>
+                    </div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="8.5" cy="7" r="4"/>
+                                <line x1="20" y1="8" x2="20" y2="14"/>
+                                <line x1="23" y1="11" x2="17" y2="11"/>
+                            </svg>
+                        </div>
+                        <h3>Sign Up Your Team</h3>
+                        <p>Register in minutes. We'll coordinate with your league to set up professional cameras at your venue.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">
+                        <span>02</span>
+                    </div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M23 7l-7 5 7 5V7z"/>
+                                <rect x="1" y="5" width="15" height="14" rx="2" ry="2"/>
+                            </svg>
+                        </div>
+                        <h3>We Record Every Game</h3>
+                        <p>Our cameras automatically capture all the action. Show up, cheer loud—we handle the rest.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">
+                        <span>03</span>
+                    </div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/>
+                                <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/>
+                                <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
+                            </svg>
+                        </div>
+                        <h3>Watch, Share & Relive</h3>
+                        <p>Stream live, download replays, and share highlights with everyone who matters—all from any device.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                    </svg>
+                    Testimonials
+                </span>
+                <h2 class="section-title">
+                    Loved by <span class="gradient-text">Families</span><br>
+                    Everywhere
+                </h2>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <span>SM</span>
+                        </div>
+                        <div class="testimonial-info">
+                            <strong>Sarah M.</strong>
+                            <span>Soccer Mom, Utah</span>
+                        </div>
+                        <div class="testimonial-rating">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        </div>
+                    </div>
+                    <blockquote>
+                        "My parents live in Florida and we're in Utah. Now they never miss a game. The joy on their faces during video calls after watching live is absolutely priceless."
+                    </blockquote>
+                </div>
+
+                <div class="testimonial-card featured">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <span>MJ</span>
+                        </div>
+                        <div class="testimonial-info">
+                            <strong>Mike J.</strong>
+                            <span>Youth Basketball Coach</span>
+                        </div>
+                        <div class="testimonial-rating">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        </div>
+                    </div>
+                    <blockquote>
+                        "Having game film has transformed how I prepare my team. We can actually show the kids what we mean instead of just talking about it. Game changer for youth sports."
+                    </blockquote>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <span>DT</span>
+                        </div>
+                        <div class="testimonial-info">
+                            <strong>David T.</strong>
+                            <span>Baseball Dad, Colorado</span>
+                        </div>
+                        <div class="testimonial-rating">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        </div>
+                    </div>
+                    <blockquote>
+                        "I used to spend the whole game trying to record on my phone. Now I can actually watch and cheer. Plus the quality is way better than anything I could ever do!"
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <span class="section-tag">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <line x1="12" y1="16" x2="12" y2="12"/>
+                            <line x1="12" y1="8" x2="12.01" y2="8"/>
+                        </svg>
+                        About Us
+                    </span>
+                    <h2 class="section-title">
+                        Every Young Athlete<br>
+                        Deserves to Be<br>
+                        <span class="gradient-text">Remembered</span>
+                    </h2>
+                    <p class="about-text">
+                        MVPVU was founded on a simple belief: every goal, basket, hit, and touchdown in youth sports deserves to be captured and celebrated.
+                    </p>
+                    <p class="about-text">
+                        Based in Orem, Utah, we combine professional-quality filming with seamless live-streaming and smart highlight creation—giving families a complete archive of their young athlete's journey while letting parents be fully present in the stands.
+                    </p>
+
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <div class="feature-check">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                            </div>
+                            <span>Professional Quality</span>
+                        </div>
+                        <div class="about-feature">
+                            <div class="feature-check">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                            </div>
+                            <span>Secure & Private</span>
+                        </div>
+                        <div class="about-feature">
+                            <div class="feature-check">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                            </div>
+                            <span>Always Accessible</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-visual">
+                    <div class="about-card card-1">
+                        <div class="card-content">
+                            <span class="card-number">50K+</span>
+                            <span class="card-label">Games Captured</span>
+                        </div>
+                    </div>
+                    <div class="about-card card-2">
+                        <div class="card-content">
+                            <span class="card-number">10K+</span>
+                            <span class="card-label">Families Served</span>
+                        </div>
+                    </div>
+                    <div class="about-card card-3">
+                        <div class="card-content">
+                            <span class="card-number">500+</span>
+                            <span class="card-label">Partner Teams</span>
+                        </div>
+                    </div>
+                    <div class="about-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="cta-bg">
+            <div class="cta-orb orb-1"></div>
+            <div class="cta-orb orb-2"></div>
+        </div>
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Capture<br><span class="gradient-text-light">Every Moment?</span></h2>
+                <p>Join thousands of families who never miss a moment. Start your free trial today.</p>
+                <div class="cta-buttons">
+                    <a href="https://app.mvpvu.com/login" class="btn btn-white btn-large">
+                        Start Free Trial
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <a href="#contact" class="btn btn-ghost-light btn-large">Contact Sales</a>
+                </div>
+                <p class="cta-note">No credit card required · Free 14-day trial</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <span class="section-tag">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                        Contact
+                    </span>
+                    <h2 class="section-title">
+                        Let's Start a<br>
+                        <span class="gradient-text">Conversation</span>
+                    </h2>
+                    <p class="contact-subtitle">Have questions? Want to bring MVPVU to your league? We'd love to hear from you.</p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <strong>Visit Us</strong>
+                                <p>105 South State Street, Suite 401<br>Orem, Utah 84058</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <strong>Email Us</strong>
+                                <p><a href="mailto:support@mvpvu.com">support@mvpvu.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" placeholder="John Smith" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="organization">Organization / Team</label>
+                            <input type="text" id="organization" name="organization" placeholder="Your team or league name">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Tell us how we can help..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-large btn-full btn-glow">
+                            Send Message
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="22" y1="2" x2="11" y2="13"/>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <svg class="logo-img" viewBox="0 0 184 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <text x="0" y="32" font-family="Arial, sans-serif" font-size="38" font-weight="400" fill="#FFFFFF">mv</text>
+                            <!-- p stem -->
+                            <rect x="54" y="2" width="6" height="42" fill="#FFFFFF"/>
+                            <!-- p bowl (circular outline) -->
+                            <circle cx="75" cy="17" r="14" stroke="#FFFFFF" stroke-width="6" fill="none"/>
+                            <!-- play triangle inside bowl -->
+                            <polygon points="69,9 69,25 83,17" fill="#9761B1"/>
+                            <!-- vu text -->
+                            <text x="94" y="32" font-family="Arial, sans-serif" font-size="38" font-weight="400" fill="#9761B1">vu</text>
+                        </svg>
+                    </a>
+                    <p>Where Every Moment Matters. Professional youth sports recording for families who want to be present while preserving every memory.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                        </a>
+                        <a href="#" aria-label="YouTube">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="#fff"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">For Teams</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 MVPVU. All rights reserved.</p>
+                <p>Made with passion for youth sports families.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
