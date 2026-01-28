@@ -363,16 +363,6 @@ img {
     width: auto;
 }
 
-@media (max-width: 768px) {
-    .video-watermark {
-        bottom: 12px;
-        right: 12px;
-    }
-
-    .video-watermark svg {
-        height: 22px;
-    }
-}
 
 
 
@@ -1146,9 +1136,39 @@ img {
         padding: 24px;
     }
 
+    /* Mobile video adjustments */
+    .hero-video-wrapper {
+        aspect-ratio: 4 / 3;
+    }
+
+    .feature-video-wrapper {
+        aspect-ratio: 16 / 9;
+    }
+
+    .video-watermark {
+        bottom: 12px;
+        right: 12px;
+    }
+
+    .video-watermark svg {
+        height: 20px;
+    }
 }
 
 @media (max-width: 480px) {
+    .hero-video-wrapper {
+        aspect-ratio: 1 / 1;
+        border-radius: var(--radius-md);
+    }
+
+    .feature-video-wrapper {
+        aspect-ratio: 4 / 3;
+        border-radius: var(--radius-md);
+    }
+
+    .video-watermark svg {
+        height: 16px;
+    }
     .hero-title {
         font-size: 32px;
     }
