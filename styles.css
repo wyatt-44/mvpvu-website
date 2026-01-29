@@ -852,25 +852,33 @@ img {
 }
 
 .contact-subtitle {
-    font-size: 16px;
-    color: var(--gray-500);
-    line-height: 1.6;
-    margin-top: 16px;
+    font-size: 18px;
+    color: var(--gray-600);
+    line-height: 1.7;
+    margin-top: 20px;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .contact-email {
-    margin-top: 20px;
+    margin-top: 28px;
 }
 
 .contact-email a {
-    font-size: 18px;
-    font-weight: 600;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
     color: var(--green);
-    transition: color var(--transition);
+    background: rgba(55, 97, 62, 0.1);
+    padding: 12px 24px;
+    border-radius: var(--radius-md);
+    transition: all var(--transition);
 }
 
 .contact-email a:hover {
-    color: var(--green-dark);
+    color: var(--white);
+    background: var(--green);
 }
 
 /* Contact Form */
