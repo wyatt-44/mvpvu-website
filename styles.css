@@ -387,12 +387,12 @@ img {
 }
 
 .section-tag {
-    font-size: 13px;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: 700;
     color: var(--green);
     text-transform: uppercase;
-    letter-spacing: 0.1em;
-    margin-bottom: 16px;
+    letter-spacing: 0.12em;
+    margin-bottom: 18px;
     display: block;
 }
 
