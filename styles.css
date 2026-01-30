@@ -234,7 +234,7 @@ input, textarea {
 .section-header {
     text-align: center;
     max-width: 800px;
-    margin: 0 auto 80px;
+    margin: 0 auto 64px;
 }
 
 .section-title {
@@ -461,7 +461,7 @@ input, textarea {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    padding: 140px 0 100px;
+    padding: 140px 0 120px;
     overflow: hidden;
     background: linear-gradient(180deg, #FFFFFF 0%, #F8EEF5 50%, #F7D9FF 100%);
 }
@@ -1812,7 +1812,7 @@ input, textarea {
 .testimonials-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 32px;
+    gap: 28px;
 }
 
 .testimonial-card {
@@ -1936,8 +1936,8 @@ input, textarea {
 
 .about-features {
     display: flex;
-    gap: 32px;
-    margin-top: 40px;
+    gap: 40px;
+    margin-top: 32px;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -2137,8 +2137,8 @@ input, textarea {
 .contact-grid {
     display: grid;
     grid-template-columns: 1fr 1.2fr;
-    gap: 100px;
-    align-items: start;
+    gap: 80px;
+    align-items: center;
 }
 
 .contact-info .section-tag {
@@ -2282,8 +2282,8 @@ input, textarea {
 .footer-top {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr;
-    gap: 80px;
-    margin-bottom: 60px;
+    gap: 60px;
+    margin-bottom: 48px;
 }
 
 .footer-brand .logo {
